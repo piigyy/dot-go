@@ -4,7 +4,7 @@ services:
     image: postgres:12
     container_name: dot-go-db
     environment:
-      - POSTGRES_PASSWORD=At0hlZ@vMNKMM2EYTShTRfDh!lao53AR
+      - POSTGRES_PASSWORD=At0hlZ@vMNKMM2EYTShTRfDhlao53AR
       - POSTGRES_USER=dot-library
       - POSTGRES_DB=dot_library
     ports:
