@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  db:
+    image: postgres:12
+    container_name: dot-go-db
+    environment:
+      - POSTGRES_PASSWORD=At0hlZ@vMNKMM2EYTShTRfDh!lao53AR
+      - POSTGRES_USER=dot-library
+      - POSTGRES_DB=dot_library
+    ports:
+      - 25431:5432
+    volumes:
+      - ./xdata/pgsql:/var/lib/postgresql/data
+    restart: always
+
+  redis:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - '6378:6379'
+    command: redis-server --save 20 1 --loglevel warning --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
